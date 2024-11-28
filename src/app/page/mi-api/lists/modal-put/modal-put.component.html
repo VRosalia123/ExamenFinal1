@@ -1,0 +1,67 @@
+<div
+  class="modal fade"
+  #modalEditar
+  tabindex="-1"
+  aria-labelledby="empleadoEditarModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="empleadoEditarModalLabel">Editar Empleado</h1>
+        <button type="button" class="btn-close" aria-label="Close" (click)="closeModal()"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="nombreEmpleado" class="form-label">Nombre</label>
+          <input
+            type="text"
+            id="nombreEmpleado"
+            class="form-control"
+            [value]="empleado.nombreEmpleado"
+            #nombreEmpleado
+          />
+        </div>
+        <div class="mb-3">
+          <label for="puesto" class="form-label">Puesto</label>
+          <input type="text" id="puesto" class="form-control" [value]="empleado.puesto" #puesto />
+        </div>
+        <div class="mb-3">
+          <label for="salario" class="form-label">Salario</label>
+          <input
+            type="number"
+            id="salario"
+            class="form-control"
+            [value]="empleado.salario"
+            #salario
+          />
+        </div>
+        <div class="mb-3">
+          <label for="estado" class="form-label">Estado</label>
+          <select id="estado" class="form-select" #estado [value]="empleado.estado">
+            <option value="Activo">Activo</option>
+            <option value="Inactivo">Inactivo</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cerrar</button>
+        <button
+          type="button"
+          class="btn btn-success"
+          (click)="editarEmpleado(
+            nombreEmpleado.value,
+            puesto.value,
+            salario.value,
+            estado.value,
+            empleado._id!
+          )"
+        >
+          Guardar Cambios
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

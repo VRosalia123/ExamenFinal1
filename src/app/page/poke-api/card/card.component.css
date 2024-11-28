@@ -1,0 +1,31 @@
+.card {
+    background: linear-gradient(to right,  #138b9b, #535353);
+    border: none; /* Sin borde para un diseño más limpio */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves para efectos */
+    height: auto;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Agrega sombra al pasar el mouse */
+}
+
+/* Estilo para la imagen dentro de la tarjeta */
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */
+    width: auto;
+    height: 150px;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+/* Estilo para los botones */
+.btn-primary {
+    background: linear-gradient(to right, #0e7a7a, #3b3b3b);
+    border: none; /* Sin borde para un diseño más limpio */
+    transition: background 0.3s; /* Transición suave para el color de fondo */
+}
+
+.btn-primary:hover {
+    background: rgba(0, 102, 51, 1); /* Cambia a un color sólido al pasar el mouse */
+}

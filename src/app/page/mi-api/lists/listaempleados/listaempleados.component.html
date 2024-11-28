@@ -1,0 +1,40 @@
+<div *ngIf="empleados && empleados.empleados.length > 0; else noData">
+    <table class="table table-striped table-hover mt-3">
+      <thead class="">
+        <tr>
+          <th>#</th>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Puesto</th>
+          <th>Salario</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let empleado of empleados.empleados; index as i">
+          <td>{{ i + 1 }}</td>
+          <td>{{ empleado._id }}</td>
+          <td>{{ empleado.nombreEmpleado }}</td>
+          <td>{{ empleado.puesto }}</td>
+          <td>{{ empleado.salario | currency }}</td>
+          <td>{{ empleado.estado }}</td>
+          <td>
+            <div class="text-center">
+              <button class="btn btn-success me-3" type="button" (click)="openmodal(empleado)">Edit</button>
+              <button class="btn btn-danger" (click)="elimiminar(empleado._id!)" type="button">Delete</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <ng-template #noData>
+    <div class="alert alert-warning mt-3" role="alert">
+      No hay empleados para mostrar.
+    </div>
+  </ng-template>
+  
+
+<app-modal-put (onEmpleadoEditado)="onEdit()"></app-modal-put>

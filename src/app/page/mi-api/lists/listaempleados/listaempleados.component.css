@@ -1,0 +1,64 @@
+/* Estilo de la tabla */
+.table {
+    background-color: rgba(13, 188, 211, 0.473); /* Fondo con algo de transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #ffffff; /* Borde blanco */
+    color: #fff; /* Color de texto blanco */
+  }
+  
+  .table th, .table td {
+    padding: 10px; /* Espaciado dentro de las celdas */
+    text-align: center; /* Centrar el texto */
+  }
+  
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo más oscuro para filas impares */
+  }
+  
+  .table-dark {
+    background-color: #333; /* Fondo oscuro para el encabezado */
+    color: #fff; /* Texto blanco en el encabezado */
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Resaltado al pasar el ratón */
+  }
+  
+  .table td {
+    font-size: 16px; /* Tamaño de fuente para las celdas */
+  }
+  
+  .table .btn {
+    padding: 5px 15px; /* Padding para los botones */
+    font-size: 14px; /* Tamaño de fuente para los botones */
+    border-radius: 5px; /* Bordes redondeados en botones */
+    transition: all 0.3s ease; /* Transición suave en hover */
+  }
+  
+  /* Botones personalizados */
+  .table .btn-success {
+    background-color: #28a745 !important; /* Verde para el botón Edit */
+    border: none;
+  }
+  
+  .table .btn-success:hover {
+    background-color: #218838 !important; /* Hover para el botón Edit */
+  }
+  
+  .table .btn-danger {
+    background-color: #dc3545 !important; /* Rojo para el botón Delete */
+    border: none;
+  }
+  
+  .table .btn-danger:hover {
+    background-color: #c82333 !important; /* Hover para el botón Delete */
+  }
+  
+  /* Alerta de datos vacíos */
+  .alert-warning {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo más claro para la alerta */
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  

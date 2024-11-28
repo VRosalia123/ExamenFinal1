@@ -1,0 +1,57 @@
+.input-group {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: transparent; /* Fondo transparente para el grupo de entrada */
+}
+
+.form-control {
+  border: 2px solid #0e7a7a; /* Borde verde azulado oscuro */
+  border-right: none; /* Sin borde derecho para unir con el botón */
+  padding: 10px;
+  border-radius: 8px 0 0 8px; /* Bordes redondeados a la izquierda */
+  font-size: 1.1rem; /* Tamaño de fuente */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  background: transparent; /* Hacer el fondo del campo de entrada transparente */
+  color: #fff; /* Color del texto */
+}
+
+.form-control:focus {
+  border-color: #0e7a7a; /* Color del borde al enfocar */
+  box-shadow: 0 0 8px #0e7a7a; /* Sombra al enfocar */
+}
+
+::placeholder {
+  color: #888; /* Color del texto del placeholder */
+  font-style: italic; /* Estilo en cursiva */
+}
+
+.btn-outline-success {
+  border: 2px solid #0e7a7a; /* Borde verde azulado oscuro */
+  color: #fff; /* Color del texto en el botón */
+  background: linear-gradient(to right, #0e7a7a, #4f4f4f); /* Degradado de verde azulado a gris oscuro */
+  padding: 10px 20px; /* Espaciado interior */
+  border-radius: 0 8px 8px 0; /* Bordes redondeados a la derecha */
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transiciones suaves */
+}
+
+.btn-outline-success:hover {
+  background: #0e7a7a; /* Fondo verde azulado oscuro al hacer hover */
+  color: #fff; /* Color del texto al hacer hover */
+  border-color: #0e7a7a; /* Borde al hacer hover */
+}
+
+.btn-outline-success:focus {
+  box-shadow: 0 0 8px #ff6347; /* Sombra naranja al enfocar */
+  border-color: #ff6347; /* Borde naranja al enfocar */
+}
+
+.btn-outline-success i {
+  font-size: 1.2rem; /* Tamaño del icono */
+}
+
+.input-group .form-control:disabled, 
+.input-group .btn-outline-success:disabled {
+  background-color: transparent; /* Fondo transparente para elementos deshabilitados */
+  border-color: #d3d3d3; /* Borde gris para elementos deshabilitados */
+  color: #aaa; /* Color gris para texto deshabilitado */
+}

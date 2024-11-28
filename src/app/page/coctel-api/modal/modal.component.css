@@ -1,0 +1,51 @@
+/* Modal */
+.modal-content {
+  border-radius: 10px;
+  background: linear-gradient(to right, #0e7a7a81, #4f4f4f80); /* Fondo verde muy claro */
+  border: 1px solid #28a745; /* Borde verde claro */
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.2); /* Sombra con un toque de verde */
+}
+
+.modal-header {
+  background: linear-gradient(to right, #0e7a7a, #4f4f4f); /* Fondo verde claro */
+  color: white; /* Texto blanco */
+  border-bottom: none;
+}
+
+.btn-close-white {
+  filter: brightness(0) invert(1); /* Asegura que el botón de cierre sea visible sobre el fondo verde */
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.imagenprincipal {
+  border-color: #28a745; /* Borde verde claro */
+  box-shadow: 0 2px 6px rgba(0, 128, 0, 0.3); /* Sombra verde en la imagen */
+}
+
+.modal-body h5, .modal-body h6 {
+  color: #28a745; /* Verde claro para los títulos de la sección */
+}
+
+.modal-body p, .modal-body li {
+  color: black; /* Verde más oscuro para el texto */
+}
+
+.modal-footer {
+  border-top: none;
+  background: linear-gradient(to right, #0e7a7a, #4f4f4f); /* Fondo verde muy claro */
+}
+
+.btn-secondary {
+  background-color: #28a745; /* Botón verde claro */
+  border-color: #28a745;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #218838; /* Verde más oscuro en hover */
+  border-color: #1e7e34;
+}
+

@@ -1,0 +1,33 @@
+.pagination {
+  font-size: 1.2rem;
+}
+
+.page-item .page-link {
+  color: #ffffff; /* Texto blanco */
+  background: linear-gradient(to right, #0e7a7a, #4f4f4f); /* Fondo con gradiente */
+  border: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  border-radius: 12px; /* Bordes redondeados suaves */
+  box-shadow: 0 4px 10px rgba(0, 114, 255, 0.5); /* Sombra con color */
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.page-item .page-link:hover {
+  background: #28a745; /* Gradiente al hacer hover */
+  box-shadow: 0 6px 12px #0e7a7a; /* Sombra más intensa */
+  transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+.page-link.active {
+  background: #28a745; /* Gradiente diferente para activo */
+  color: #ffffff;
+  box-shadow: 0 6px 12px rgba(255, 110, 196, 0.8); /* Resplandor más pronunciado */
+}
+
+.page-link.active:hover {
+  background: linear-gradient(45deg, #ff1493, #4b0082); /* Gradiente más oscuro para el activo */
+}
+
+
